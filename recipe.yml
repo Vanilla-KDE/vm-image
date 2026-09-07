@@ -1,14 +1,14 @@
-name: Vanilla GNOME VM
-id: gnome-vm
+name: Vanilla KDE VM
+id: kde-vm
 vibversion: 1.1.0
 
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/gnome:latest
+  base: ghcr.io/vanilla-kde/kde:latest
   addincludes: true
   singlelayer: true
   labels:
-    maintainer: Vanilla OS Contributors
+    maintainer: FangcatChina
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:

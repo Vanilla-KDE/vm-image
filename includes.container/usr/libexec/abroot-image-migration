@@ -2,5 +2,5 @@
 
 url=$(jq -r '.registry + "/" + .name + ":" + .tag' /etc/abroot/abroot.json)
 if [ $url = "ghcr.io/vanilla-os/vm:main" ]; then
-	abroot rebase ghcr.io/vanilla-os/gnome-vm:latest --rebase-only
+	abroot rebase ghcr.io/vanilla-kde/kde-vm:latest --rebase-only
 fi
