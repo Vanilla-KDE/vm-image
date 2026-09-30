@@ -1,14 +1,14 @@
-name: Vanilla KDE VM
-id: kde-vm
+name: Vanilla Plasma VM
+id: plasma-vm
 vibversion: 1.1.0
 
 stages:
 - id: build
-  base: ghcr.io/vanilla-kde/kde:latest
+  base: ghcr.io/vanilla-kde/plasma:dev
   addincludes: true
   singlelayer: true
   labels:
-    maintainer: FangcatChina
+    maintainer: Fangcat_Dev
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:
